@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTech - Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar container">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> Agro<span>Tech</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#inicio">Início</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#impacto">Impacto</a>
+                <a href="#simulador">Simulador</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content container">
+            <h1>O Agro Forte Constrói o <br><span class="txt-efeito">Amanhã Sustentável</span></h1>
+            <p>Unimos a potência da tecnologia no campo com a preservação do meio ambiente. Descubra como a agricultura de precisão transforma o futuro.</p>
+            <a href="#simulador" class="btn-principal">Simule Seu Impacto</a>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="tecnologias container">
+        <h2 class="titulo-secao">Nossas Tecnologias</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <i class="fa-solid fa-drone icon-card"></i>
+                <h3>Drones de Precisão</h3>
+                <p>Mapeamento térmico e análise de solo para reduzir em até 30% o uso de água e insumos.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-solar-panel icon-card"></i>
+                <h3>Energia Limpa</h3>
+                <p>Fazendas inteligentes movidas a energia solar e biomassa, zerando a emissão de carbono.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-seedling icon-card"></i>
+                <h3>Manejo Regenerativo</h3>
+                <p>Técnicas que recuperam os nutrientes do solo natural, garantindo safras mais fortes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="impacto" class="impacto">
+        <div class="container impacto-grid">
+            <div class="impacto-item">
+                <h3 class="contador" data-alvo="15000">0</h3>
+                <p>Hectares Monitorados</p>
+            </div>
+            <div class="impacto-item">
+                <h3 class="contador" data-alvo="45">0</h3>
+                <p>% Economia de Água</p>
+            </div>
+            <div class="impacto-item">
+                <h3 class="contador" data-alvo="850">0</h3>
+                <p>Produtores Satisfeitos</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="simulador container">
+        <div class="simulador-box">
+            <h2 class="titulo-secao">Simulador de Sustentabilidade</h2>
+            <p class="Sub">Insira o tamanho da sua propriedade para calcular a estimativa de redução de CO₂ anual usando nossa tecnologia.</p>
+            
+            <div class="form-grupo">
+                <label for="hectares">Tamanho da Terra (em Hectares):</label>
+                <input type="number" id="hectares" placeholder="Ex: 50" min="1">
+            </div>
+            <button id="btnCalcular" class="btn-principal">Calcular Economia</button>
+
+            <div id="resultado" class="resultado-escondido">
+                <h3>Resultado Estimado:</h3>
+                <p id="textoResultado"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 AgroTech. Cultivando tecnologia, colhendo o futuro.</p>
+            <div class="redes-sociais">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
